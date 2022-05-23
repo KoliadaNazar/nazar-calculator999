@@ -1,0 +1,150 @@
+* {
+text-decoration:none;
+list-style:none;
+
+}
+
+
+
+.wrapper--page {
+
+  display: grid;
+  /* grid-column-gap: 2%; */
+  grid-row-gap: 6%;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: 1fr 0.8fr 1fr 1fr;
+  grid-template-areas:
+  "header header--h1"
+  "none container"
+  "main main"
+  "footer footer";
+}
+
+.header {
+  width: 96px;
+  grid-area: header;
+  justify-self: end;
+  align-self: end;
+  display: grid;
+  grid-column-gap: 4%;
+  grid-row-gap: 4%;
+  grid-template-columns: 20px 20px 20px 20px;
+  grid-template-rows: 20px 20px 20px 20px;
+  grid-template-areas:
+  "cube--1 cube--1 cube--3 cube--4"
+  "cube--5 cube--6 cube--7 cube--8"
+  "cube--9 cube--10 cube--11 cube--12"
+  "cube--13 cube--14 cube--15 cube--16";
+
+}
+.cube--1 {
+  grid-area: cube--1;
+  background-color: #328f4e;
+}
+
+.cube--3 {
+  grid-area: cube--3;
+  background-color: #f0e902;
+}
+
+.cube--4 {
+  grid-area: cube--4;
+  background-color: #f0e902;
+}
+
+.cube--5 {
+  grid-area: cube--5;
+  background-color: #328f4e;
+}
+
+.cube--6 {
+  grid-area: cube--6;
+  background-color: #f0e902;
+}
+
+.cube--7 {
+  grid-area: cube--7;
+  background-color: #3d59a1
+}
+
+.cube--8 {
+  grid-area: cube--8;
+  background-color: #f0e902;
+}
+.cube--9 {
+  grid-area: cube--9;
+  background-color: red;
+
+}
+
+.cube--10 {
+  grid-area: cube--10;
+  background-color: #328f4e;
+}
+
+.cube--11 {
+  grid-area: cube--11;
+  background-color: red;
+}
+
+.cube--12 {
+  grid-area: cube--12;
+  background-color: #3d59a1;
+}
+.cube--13 {
+  grid-area: cube--13;
+  background-color: red;
+}
+
+.cube--14 {
+  grid-area: cube--14;
+  background-color: red;
+}
+
+.cube--15 {
+  grid-area: cube--15;
+  background-color: #3d59a1;
+}
+
+.cube--16 {
+  grid-area: cube--16;
+  background-color: #3d59a1;
+}
+
+.header--h1 {
+  /* padding-left: 1.6%; */
+  justify-self: start;
+  align-self: end;
+  grid-area: header--h1;
+  font-weight: 800;
+  font-size: 40px;
+  color: #3d59a1;
+}
+
+.container {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  padding-top: 0.8%;
+  grid-area: container;
+  background-color: #cc0404;
+  border-top: solid;
+  border-bottom: solid;
+  border-color:#c2c2c2;
+   border-width: 2px;
+}
+
+.container--class {
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.none {
+  grid-area: none;
+  background-color: #cc0404;
+  border-top: solid;
+  border-bottom: solid;
+  border-color:#c2c2c2;
+  border-width: 2px;
+}
